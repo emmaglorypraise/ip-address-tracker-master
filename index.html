@@ -5,30 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
   
   <title>Frontend Mentor | IP Address Tracker</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  IP Address Tracker
+<main class="text-center ">
 
-  Search for any IP address or domain
+  <div class="box1 pt-5">
+    <h2>IP Address Tracker</h2>
+    <div class="inputBox">
+     <input type="text" placeholder="Search for any IP address or domain" onclick="value=''">
+     <button><img src="./images/icon-arrow.svg" alt="arrow"></button>
+    </div>
+  </div>
 
-  IP Address
-  Location
-  Timezone
-    UTC <!-- add offset value dynamically using the API -->
-  ISP
+  <div class="midBox mb-5">
+      <div>
+        <h3>IP Address</h3>
+        <p>192.212.174.101</p>
+      </div>
+      <hr>
+      <div>
+        <h3>Location</h3>
+        <p>Brooklyn NY, 10001</p>
+      </div>
+      <hr>
+      <div>
+        <h3>Timezone</h3>
+        <p>UTC <span>-05:00</span> </p>
+      </div>
+      <hr>
+      <div>
+        <h3>ISP</h3>
+        <p>SpaceX Starlink</p>
+      </div>
+  </div>
+
+  <div class="box2">
+
+  </div>
   
+</main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Glory Praise</a>.
   </div>
+
+  
+  <script src="js/jquery.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
