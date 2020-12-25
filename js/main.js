@@ -11,5 +11,40 @@ function getIpAddress() {
   console.log('value:', ipAddress);
 }
 
+// function getIpDetails() {
+//   fetch(URL)
+//   .then response => response.json()
+//   .then data => console.log(data)
+
+  
+  
+// }
+
+function getIpDetails () {
+  fetch(URL)
+  .then(response => {
+    return response.json();
+  }) 
+  .then(displayResults);
+}
+
+function displayResults(response) {
+  console.log(response);
+
+  // let ip = document.querySelector('.ip');
+  // ip.innerText = `${ip}`;
+
+  // let location = document.querySelector('.location');
+  // location.innerText = `${location.city}, ${location.postalCode}`;
+
+  // let timezone = document.querySelector('.timezone');
+  // timezone.innerText = `${location.timezone}`;
+
+  // let isp = document.querySelector('.isp');
+  // isp.innerText = `${isp}`;
+
+}
+
+
 
 
