@@ -6,16 +6,12 @@ URL = `https://geo.ipify.org/api/v1?apiKey=${API_KEY}&ipAddress=${ipAddress}`;
 
 
 button.addEventListener('click', getIpAddress);
+
 function getIpAddress() {
   ipAddress = input.value; 
   console.log('value:', ipAddress);
 }
-
-// function getIpDetails() {
-//   fetch(URL)
-//   .then response => response.json()
-//   .then data => console.log(data)
-
+getIpAddress();
   
   
 // }
@@ -27,24 +23,22 @@ function getIpDetails () {
   }) 
   .then(displayResults);
 }
+getIpDetails();
 
 function displayResults(response) {
   console.log(response);
 
-  // let ip = document.querySelector('.ip');
-  // ip.innerText = `${ip}`;
+  let ip = document.querySelector('.ip');
+  ip.innerText = `${response.ip}`;
 
-  // let location = document.querySelector('.location');
-  // location.innerText = `${location.city}, ${location.postalCode}`;
+  let location = document.querySelector('.location');
+  location.innerText = `${response.location.city}, ${response.location.country} ${response.location.postalCode}`;
 
-  // let timezone = document.querySelector('.timezone');
-  // timezone.innerText = `${location.timezone}`;
+  let timezone = document.querySelector('.timezone');
+  timezone.innerText = `${response.location.timezone}`;
 
-  // let isp = document.querySelector('.isp');
-  // isp.innerText = `${isp}`;
+  let isp = document.querySelector('.isp');
+  isp.innerText = `${response.isp}`;
 
 }
-
-
-
 

@@ -73,6 +73,10 @@ body{
   height: 60px;
   padding: 10px;
 }
+#mapid { 
+  height: 100vh; 
+  /* background-size: cover; */
+}
 
 
 @media(max-width: 786px) {
